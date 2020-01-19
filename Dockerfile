@@ -6,3 +6,5 @@ RUN apt-get update
 RUN apt-get install -y python3
 
 RUN python3 --version
+
+RUN npm install react react-dom next
