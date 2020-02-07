@@ -1,0 +1,13 @@
+name: Python application
+
+on: [pull_request]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Show got log
+      run: git log --oneline --graph --decorate
